@@ -19,7 +19,7 @@ Welcome to **Driverio Backend**, a robust and secure corporate logistics and cab
 
 *   **Core Framework**: Spring Boot 3.4.7 (Java 17+)
 *   **Security & Auth**: Spring Security, JWT (JSON Web Tokens), BCrypt Cryptography
-*   **Database & ORM**: MySQL Database, Spring Data JPA, Hibernate ORM
+*   **Database & ORM**: MySQL Database, PostgreSQL Database Spring Data JPA, Hibernate ORM
 *   **Notification Integration**: JavaMailSender, Twilio SMS SDK
 *   **AI Integration**: HuggingFace Inference API (supporting FLAN-T5 Models)
 *   **Build Tool**: Apache Maven (includes Maven Wrapper `mvnw`)
