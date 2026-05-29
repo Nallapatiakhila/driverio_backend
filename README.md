@@ -3,8 +3,6 @@
 Welcome to **Driverio Backend**, a robust and secure corporate logistics and cab dispatch control system built using **Spring Boot 3**. This system enables enterprise organizations to coordinate vehicle scheduling, automate driver assignments, and securely manage role-based portals for Admins, HR Specialists, IT Staff, and Drivers.
 
 ---
-## Live Demo
-https://driverio-backend-1.onrender.com
 
 ## 🌟 Key Features
 
