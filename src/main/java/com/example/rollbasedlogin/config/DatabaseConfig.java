@@ -43,6 +43,10 @@ public class DatabaseConfig {
                         port = 5432;
                     }
                     String path = uri.getPath();
+                    String query = uri.getRawQuery();
+                    if (query != null) {
+                        path = path + "?" + query;
+                    }
                     
                     jdbcUrl = "jdbc:postgresql://" + host + ":" + port + path;
                     
