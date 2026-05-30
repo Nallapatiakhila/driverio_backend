@@ -34,7 +34,8 @@ public class SecurityConfig {
         CorsConfiguration configuration = new CorsConfiguration();
         configuration.setAllowedOrigins(List.of(
             "http://localhost:3000",
-            "https://driverio-frontend-3n5r.vercel.app"
+            "https://driverio-frontend-3n5r.vercel.app",
+            "https://driverio-frontend-9xk1.vercel.app"
         ));
         configuration.setAllowedMethods(List.of("GET","POST","PUT","DELETE","OPTIONS"));
         configuration.setAllowedHeaders(List.of("*"));

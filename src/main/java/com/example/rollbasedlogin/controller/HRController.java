@@ -15,7 +15,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/hr")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = {"http://localhost:3000", "https://driverio-frontend-3n5r.vercel.app", "https://driverio-frontend-9xk1.vercel.app"})
 public class HRController {
 
     @Autowired
