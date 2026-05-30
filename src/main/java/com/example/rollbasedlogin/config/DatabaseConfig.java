@@ -49,12 +49,9 @@ public class DatabaseConfig {
                     String userInfo = uri.getUserInfo();
                     if (userInfo != null && userInfo.contains(":")) {
                         String[] parts = userInfo.split(":");
-                        if (username == null || username.isEmpty()) {
-                            username = parts[0];
-                        }
-                        if (password == null || password.isEmpty()) {
-                            password = parts[1];
-                        }
+                        // Always prioritize credentials embedded inside the URL itself
+                        username = parts[0];
+                        password = parts[1];
                     }
                 } catch (URISyntaxException e) {
                     String rawUrl = dbUrl;
