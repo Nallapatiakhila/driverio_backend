@@ -15,9 +15,10 @@ public class CorsConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
-                        .allowedOrigins("http://localhost:3000", "https://driverio-frontend-3n5r.vercel.app", "https://driverio-frontend-9xk1.vercel.app") // React dev and Vercel production
+                        .allowedOriginPatterns("http://localhost:3000", "https://driverio-frontend-*.vercel.app") // React dev and Vercel production patterns
                         .allowedMethods("*")
-                        .allowedHeaders("*");
+                        .allowedHeaders("*")
+                        .allowCredentials(true);
             }
         };
     }
